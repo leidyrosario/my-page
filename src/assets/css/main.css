@@ -1,13 +1,13 @@
 /* --------------------------------------------
-	
+
 	main.css : main style file
 	Project : Empathy
-	Author : pixelwars 
-	
+	Author : pixelwars
+
 	---
-	
+
 	CONTEXT:
-	
+
 	1. BASE - @base
 		1.1 ELEMENTS
 		1.2 FONTS
@@ -17,13 +17,13 @@
 	4. LAYOUT - @layout
 	5. MODULES - @modules
 	6. THEME - @theme
-	
+
    -------------------------------------------- */
 
 /*  --------------------------------------------
 
 	1. BASE (@base) - base html elements
-	
+
     -------------------------------------------- */
 
 /* ----- 1.1 ELEMENTS ----- */
@@ -274,7 +274,7 @@ dd {
 /*  --------------------------------------------
 
 	2. FORMS (@forms) - form elements
-	
+
     -------------------------------------------- */
 form p {
   position: relative;
@@ -495,7 +495,7 @@ label.error:after {
 /*  --------------------------------------------
 
 	3. COMMON (@common) - common and helper classes
-	
+
     -------------------------------------------- */
 .cf:before,
 .cf:after,
@@ -572,7 +572,7 @@ textarea,
 /*  --------------------------------------------
 
 	4. LAYOUT (@layout) : layout styles
-	
+
     -------------------------------------------- */
 .site,
 .site-main {
@@ -588,6 +588,7 @@ textarea,
   background-size: cover;
   background-position: center center;
   background-color: #fff;
+  margin-left: 0;
 }
 .single-page-layout body {
   background: #fff;
@@ -1089,7 +1090,7 @@ section#contact  {
 /*  --------------------------------------------
 
 	5. MODULES @modules : reusable styles
-	
+
     -------------------------------------------- */
 
 /* PAGE TITLE */
@@ -1414,8 +1415,9 @@ h2 i:before {
 
 /* SKILLS */
 .skill-unit {
-  padding-bottom: 1.1em;
-  padding-right: 32px;
+  padding-bottom: .6em;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .skill-unit h4 {
   margin: 0 0 4px 0;
@@ -6976,7 +6978,7 @@ a.more-link:hover {
 /*  --------------------------------------------
 
 	6. THEME (@theme) - customize colors etc...
-	
+
     -------------------------------------------- */
 body {
   color: #345;

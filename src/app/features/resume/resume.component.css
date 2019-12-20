@@ -5,13 +5,11 @@
 
 .bar{
     height: 25px;
-    min-width: 400px;
     margin: 0 auto 10px;
     border-radius: 15px;
     line-height: 25px;
     font-size: 14px;
     color:#fff;
-    padding: 0 0 0 10px;
     position: relative;
 }
 
