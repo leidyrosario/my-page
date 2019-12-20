@@ -1,0 +1,12 @@
+#contact {
+    background: darkslategray; 
+  }
+
+ .invalid-feedback{
+   color: red;
+ }
+
+ .submit button{
+    align-items: flex-start;
+    text-align: center;
+ }

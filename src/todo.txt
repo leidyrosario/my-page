@@ -1,0 +1,8 @@
+BUILD PROD
+ng build --prod --build-optimizer --output-hashing=all
+
+
+FTP: 
+ftp.leidyrosario.it
+username: admin_leidy
+password: %LeidyRosarioFtp%

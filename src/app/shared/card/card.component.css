@@ -1,0 +1,31 @@
+.cardContainer {
+    height: 350px;
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    overflow: hidden;
+    background: white;
+  }
+  .cardBody {
+    padding: 10px;
+  }
+
+  .cardTitle {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .readMore {
+    width: 100%;
+    text-align: right;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition-duration: .3s;
+    animation-duration: .3s;
+  }
+  .readMore:hover {
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+  }
