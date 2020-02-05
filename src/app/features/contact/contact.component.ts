@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireDatabase } from 'angularfire2/database';
+import  { Observable } from  'rxjs';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -10,45 +11,46 @@ import { AngularFireDatabase } from 'angularfire2/database';
   animations: []
 })
 export class ContactComponent  {
-  form: FormGroup;
-
-  public showDialog: boolean;
+  itemName = "";
+  itemEmail = "";
+  itemMessage = "";
+  items: Observable<any>;
+  registerForm: FormGroup;
+  submitted = false;
+  showMessage= false;
+  
 
   constructor(private fb: FormBuilder, private afDb: AngularFireDatabase) {
+    this.items = afDb.list('messages').valueChanges()
     this.createForm();
   }
   createForm() {
-    this.form = this.fb.group({
+    this.registerForm = this.fb.group({
       name: ['', Validators.required,  Validators.minLength(3)],
       email: ['', [Validators.required, Validators.email]],
       message: ['', Validators.required]
     });
   }
+
+  get f() { return this.registerForm.controls; }
+
   onSubmit() {
-    const {name, email, message} = this.form.value;
+    console.log('submit');
+    const {name, email, message} = this.registerForm.value;
     const date = Date();
-    const html = `
-      <div>From: ${name}</div>
-      <div>Email: <a href="mailto:${email}">${email}</a></div>
-      <div>Date: ${date}</div>
-      <div>Message: ${message}</div>
-    `;
-    const formRequest = { name, email, message, date, html };
+    const formRequest = { name, email, message, date };
     this.afDb.list('/messages').push(formRequest);
-    this.form.reset();
-
+        // stop here if form is invalid
+        if (this.registerForm.invalid) {
+            return;
+        } 
   }
 
-  get name() {
-    return this.form.get('name');
-  }
+  showHideMessage() {
+    this.showMessage = this.showMessage ? false : true;
+ }
 
-  get email() {
-    return this.form.get('email');
-  }
-
-  get message() {
-    return this.form.get('message');
-  }
-
+  clearForm() {
+    this.registerForm.reset();
+   }
 }
