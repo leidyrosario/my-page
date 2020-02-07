@@ -163,9 +163,9 @@
                                 id="message"
                                 class="required"
                                 formControlName="message"
-                                
+
                             ></textarea>
-                            <!-- [ngClass]="{ 'is-invalid': submitted && f.message.errors }" 
+                            <!-- [ngClass]="{ 'is-invalid': submitted && f.message.errors }"
                             <div
                                 *ngIf="submitted && f.message.errors"
                                 class="invalid-feedback"
@@ -181,7 +181,7 @@
                                 (click)="showHideMessage()"
                                 (click)="clearForm()"
                             >
-                    
+
                                 Invia
                             </button>
                         </div>
@@ -190,13 +190,14 @@
                 </form>
             </div>-->
     <div *ngIf="!showMessage" class="contact-form">
-      <form #f="ngForm" (submit)="add(f)">
+      <form #f="ngForm" (submit)="onSubmit(f)">
         <div class="form-group">
           <label for="name">NOME</label>
           <input
+            id="name"
             type="text"
-            [ngModel]="user?.label"
-            name="label"
+            [ngModel]="user?.name"
+            name="name"
             #labelRef="ngModel"
             required
             minlength="3"
@@ -209,6 +210,7 @@
         <div class="form-group">
           <label for="email">EMAIL</label>
           <input
+            id="email"
             type="text"
             [ngModel]="user?.email"
             name="email"
@@ -222,6 +224,7 @@
         <div class="form-group">
           <label for="message">MESSAGIO</label>
           <textarea
+            id="message"
             type="text"
             [ngModel]="user?.message"
             name="message"
@@ -238,7 +241,6 @@
           <button
             type="submit"
             [disabled]="f.invalid"
-            (click)="showHideMessage()"
           >
             Invia
           </button>

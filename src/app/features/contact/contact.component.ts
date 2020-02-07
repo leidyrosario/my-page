@@ -6,6 +6,13 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 // tslint:disable-next-line:import-spacing
 import { Observable } from 'rxjs';
 import { NgForm } from '@angular/forms';
+
+interface User {
+  name: string;
+  email: string;
+  message: string;
+}
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -15,38 +22,32 @@ import { NgForm } from '@angular/forms';
 export class ContactComponent  {
   showMessage = false;
   user: User;
-  users = [];
+  users: User[] = []
 
 
   constructor(private afDb: AngularFireDatabase) {
   }
 
   add(form: NgForm) {
+    console.log(form.value);
     this.users.push(form.value);
     form.reset();
+
+    // this.showHideMessage();
   }
 
-  onSubmit() {
-    /*const {name, email, message} = this.registerForm.value;
+  onSubmit(form: NgForm) {
+    const {name, email, message} = form.value;
     const date = Date();
+    this.showHideMessage();
     const formRequest = { name, email, message, date };
     this.afDb.list('/messages').push(formRequest);
-        // stop here if form is invalid
-    if (this.registerForm.invalid) {
-            return;
-        }*/
   }
 
 
   showHideMessage() {
-    this.showMessage = this.showMessage ? false : true;
+    this.showMessage = !this.showMessage;
  }
 
-
 }
 
-interface User {
-  label: string;
-  email: string;
-  message: string;
-}
