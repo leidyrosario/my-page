@@ -3,7 +3,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
-import  { Observable } from  'rxjs';
+// tslint:disable-next-line:import-spacing
+import { Observable } from 'rxjs';
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -11,46 +13,40 @@ import  { Observable } from  'rxjs';
   animations: []
 })
 export class ContactComponent  {
-  itemName = "";
-  itemEmail = "";
-  itemMessage = "";
-  items: Observable<any>;
-  registerForm: FormGroup;
-  submitted = false;
-  showMessage= false;
-  
+  showMessage = false;
+  user: User;
+  users = [];
 
-  constructor(private fb: FormBuilder, private afDb: AngularFireDatabase) {
-    this.items = afDb.list('messages').valueChanges()
-    this.createForm();
-  }
-  createForm() {
-    this.registerForm = this.fb.group({
-      name: ['', Validators.required,  Validators.minLength(3)],
-      email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
-    });
+
+  constructor(private afDb: AngularFireDatabase) {
   }
 
-  get f() { return this.registerForm.controls; }
+  add(form: NgForm) {
+    this.users.push(form.value);
+    form.reset();
+  }
 
   onSubmit() {
-    console.log('submit');
-    const {name, email, message} = this.registerForm.value;
+    /*const {name, email, message} = this.registerForm.value;
     const date = Date();
     const formRequest = { name, email, message, date };
     this.afDb.list('/messages').push(formRequest);
         // stop here if form is invalid
-        if (this.registerForm.invalid) {
+    if (this.registerForm.invalid) {
             return;
-        } 
+        }*/
   }
+
 
   showHideMessage() {
     this.showMessage = this.showMessage ? false : true;
  }
 
-  clearForm() {
-    this.registerForm.reset();
-   }
+
+}
+
+interface User {
+  label: string;
+  email: string;
+  message: string;
 }
