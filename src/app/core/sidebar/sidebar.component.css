@@ -1,0 +1,23 @@
+.header-wrap {
+  transition: all .3s ease-in-out;
+}
+
+.site-title {
+  transition: all .3s ease-in-out;
+}
+
+.menu-toggle {
+  transition: all .3s ease-in-out;
+}
+
+.header-wrap-opened {
+  left: 0;
+}
+
+.site-title-opened {
+  left: 190px;
+}
+
+.menu-toggle-opened {
+  left: 120px;
+}
