@@ -22,18 +22,10 @@ interface User {
 export class ContactComponent  {
   showMessage = false;
   user: User;
-  users: User[] = []
+  users: User[] = [];
 
 
   constructor(private afDb: AngularFireDatabase) {
-  }
-
-  add(form: NgForm) {
-    console.log(form.value);
-    this.users.push(form.value);
-    form.reset();
-
-    // this.showHideMessage();
   }
 
   onSubmit(form: NgForm) {
