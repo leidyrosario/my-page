@@ -1,7 +1,20 @@
 BUILD PROD
 ng build --prod --build-optimizer --output-hashing=all
 
-x aggiungere modifiche GIT
+X Clonare un progetto GIT in una nuova cartella
+git clone URL_DEL_PROGETTO_COPIATO_DA_GIT
+
+X Mandare su GIT tutte le tue modifiche
+git add .
+git commit -m "messaggio del commit"
+git push -u origin master
+
+X Prendere la versione aggiornata da GIT
+git pull
+
+X Ripristinare la tua versione "spaccata" prendendo quella presente su GIT funzionante
+git reset --hard
+git pull
 
 
 FTP: 
