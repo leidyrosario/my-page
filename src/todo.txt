@@ -1,6 +1,8 @@
 BUILD PROD
 ng build --prod --build-optimizer --output-hashing=all
 
+x aggiungere modifiche GIT
+
 
 FTP: 
 ftp.leidyrosario.it
