@@ -8,6 +8,7 @@ import { ContactComponent } from './features/contact/contact.component';
 import { PortfolioComponent } from './features/portfolio/portfolio.component';
 import { BlogComponent } from './features/blog/blog.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
+import { BlogpostsComponent } from './blogposts/blogposts.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { depth: 1 } },
@@ -21,6 +22,7 @@ const routes: Routes = [
   },
   { path: 'blog', component: BlogComponent, data: { depth: 4 } },
   { path: 'contact', component: ContactComponent, data: { depth: 5 } },
+  { path: 'blogposts', component: BlogpostsComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

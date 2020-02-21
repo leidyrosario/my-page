@@ -19,6 +19,8 @@ import { ContactComponent } from './features/contact/contact.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
 import { CardComponent } from './shared/card/card.component';
 import { MapComponent } from './features/map/map.component';
+import { BlogpostsComponent } from './blogposts/blogposts.component';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { MapComponent } from './features/map/map.component';
     ContactComponent,
     NotFoundComponent,
     CardComponent,
-    MapComponent
+    MapComponent,
+    BlogpostsComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { MapComponent } from './features/map/map.component';
     FormsModule,
     ReactiveFormsModule,
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

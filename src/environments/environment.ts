@@ -4,12 +4,21 @@
 
 export const environment = {
   production: false,
+  // firebase: {
+  //   apiKey: 'AIzaSyBd9Qp_SKHuGCN-Fo-0mmAYuOdYRg_7gzQ',
+  //   authDomain: 'il-mio-sito-91a12.firebaseapp.com',
+  //   databaseURL: 'https://il-mio-sito-91a12.firebaseio.com',
+  //   projectId: 'il-mio-sito-91a12',
+  //   storageBucket: 'il-mio-sito-91a12.appspot.com',
+  // }
   firebase: {
-    apiKey: 'AIzaSyBd9Qp_SKHuGCN-Fo-0mmAYuOdYRg_7gzQ',
-    authDomain: 'il-mio-sito-91a12.firebaseapp.com',
-    databaseURL: 'https://il-mio-sito-91a12.firebaseio.com',
-    projectId: 'il-mio-sito-91a12',
-    storageBucket: 'il-mio-sito-91a12.appspot.com',
+  apiKey: 'AIzaSyDoh0hAec4heuL2JQiWWI1eOoq4JPSAOkk',
+  authDomain: 'angularcourse-2019.firebaseapp.com',
+  databaseURL: 'https://angularcourse-2019.firebaseio.com',
+  projectId: 'angularcourse-2019',
+  storageBucket: 'angularcourse-2019.appspot.com',
+  messagingSenderId: '434755818533',
+  appId: '1:434755818533:web:780a03d2e3d3a627695bcc'
   }
 };
 
