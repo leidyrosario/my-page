@@ -18,25 +18,15 @@ export class BlogpostsComponent {
   constructor(private afs: AngularFirestore) {
     this.afs.collection<any>('blogs')
       .valueChanges()
+      .pipe(
+        take(1),
+        switchMap(res => res),
+        filter(res => res.published === true),
+        toArray(),
+      )
       .subscribe((res: Blog[]) => this.blogs = res);
   }
 
-/*
-  this.afs.collection<any>('blogs')
-.valueChanges()
-.pipe(
-    take(2),
-  switchMap(res => res),
-  tap(res => console.log(res)),
-  filter(res => res.published === true),
-  tap( res => console.log('->', res)),
-  toArray()
-)
-.subscribe( res => {
-  console.log('RES: ', res)
-  this.blogs = res;
-});
-*/
   loadPost(blogToLoad: Blog) {
     this.afs.collection<Blog[]>('blogs')
       .doc<Blog>(blogToLoad.id)
