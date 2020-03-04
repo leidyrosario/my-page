@@ -17,7 +17,32 @@ git reset --hard
 git pull
 
 
-FTP: 
+FTP:
 ftp.leidyrosario.it
 username: admin_leidy
 password: %LeidyRosarioFtp%
+
+Creazione di componente post
+ng g c blogposts/posts/{{NOME-DEL-TUO-ARTICOLO}}
+es: ng g c blogposts/posts/post-cominciamo-con-angular
+
+
+Syntax Highlights
+ATTENZIONE AGLI APICI
+
+<ngx-prism
+  [language]="'html'"
+  [code]="'CODICE \'HTML\''">
+</ngx-prism>
+
+
+const NOMEVAR = `<div class="">TEST</div>`
+
+
+<ngx-prism
+  [language]="'html'"
+  [code]="NOMEVAR">
+</ngx-prism>
+
+
+https://www.npmjs.com/package/@ngx-prism/core -->

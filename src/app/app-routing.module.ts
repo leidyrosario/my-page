@@ -9,6 +9,7 @@ import { PortfolioComponent } from './features/portfolio/portfolio.component';
 import { BlogComponent } from './features/blog/blog.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
 import { BlogpostsComponent } from './blogposts/blogposts.component';
+import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { depth: 1 } },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent, data: { depth: 4 } },
   { path: 'contact', component: ContactComponent, data: { depth: 5 } },
   { path: 'blogposts', component: BlogpostsComponent },
+  { path: 'blogposts/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

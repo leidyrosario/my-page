@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule, FormControlDirective } from '@angular/forms';
-import { AngularFireDatabase } from 'angularfire2/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
@@ -21,6 +20,8 @@ import { CardComponent } from './shared/card/card.component';
 import { MapComponent } from './features/map/map.component';
 import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { PrismModule } from '@ngx-prism/core';
+import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     NotFoundComponent,
     CardComponent,
     MapComponent,
-    BlogpostsComponent
+    BlogpostsComponent,
+    PostCominciamoConAngularComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +47,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     ReactiveFormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    PrismModule
   ],
   providers: [],
   bootstrap: [AppComponent]

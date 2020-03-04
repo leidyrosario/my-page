@@ -1,5 +1,4 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import { Post } from 'src/app/core/mocks/blogsMock';
 import { Blog } from '../../blogposts/models/blog.model';
 
 @Component({
