@@ -16,6 +16,7 @@ export class CardComponent {
 
   selectPost(post: Blog) {
     this.selectedPost.emit(post);
+    console.log();
   }
 
 

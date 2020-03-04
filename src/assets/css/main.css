@@ -1894,10 +1894,10 @@ h2 i:before {
   opacity: 0;
   filter: alpha(opacity = 0);
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 120%;
+  height: 114%;
   top: 0;
-  left: 0;
+  left: -20px;
   bottom: 0;
   right: 0;
   text-align: center;

@@ -12,7 +12,7 @@
 
 
 
-  <button class="btn btn-secondary" *ngFor="let blog of blogs" (click)="loadPost(blog)">{{ blog.title }}</button>
+ <!-- <button class="btn btn-secondary" *ngFor="let blog of blogs" (click)="loadPost(blog)">{{ blog.title }}</button>-->
 
 
  <div *ngIf='blog' [innerHTML]="blog.content"></div>

@@ -1,18 +1,31 @@
 .cardContainer {
     height: 350px;
     display: inline-block;
-    width: 30%;
-    margin: 1.5%;
+    width: 25%;
+    margin: 3.5%;
     overflow: hidden;
     background: white;
+    padding: 0 0 4em 0;
+    float: left; 
+    padding: 0 20px; 
+    margin-bottom: 40px;
   }
   .cardBody {
-    padding: 10px;
+    padding: 28px 40px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 30px;
   }
 
   .cardTitle {
-    font-weight: 700;
-    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 13px;
+    color: #345;
+    line-height: 1.4;
   }
 
   .readMore {

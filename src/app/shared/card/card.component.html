@@ -1,9 +1,9 @@
-<div *ngIf='post' class='cardContainer'>
-  <div class='cardHeader'>
+<div *ngIf='post' (click)="selectPost(post)" class='cardContainer'>
+  <div class='media-box'>
     <img src="../../../assets/images/blog/{{ post.thumb }}" />
+    <div class="mask"></div>
   </div>
   <div class='cardBody'>
-    <div class='cardTitle'>{{ post.title }}</div>
-    <p class='readMore' (click)="selectPost(post)">Read More</p>
+    <div>{{ post.title }}</div>
   </div>
 </div>
