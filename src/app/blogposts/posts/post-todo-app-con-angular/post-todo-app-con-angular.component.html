@@ -48,21 +48,48 @@
                 npm (node package manager) rispettivamente con node –v e npm –v. </p>
 
                 <p>Ora che abbiamo scaricato node possiamo procedere all’installazione di Angular CLI:</p>
-                <ngx-prism
-                [language]="'javascript'"
-                [code]="miaVar">npm install -g @angular/cli
-                </ngx-prism>
+                <ngx-gist [gistId]="'lady-ody93/e5b37711cb399355ba88610ac684f416'"></ngx-gist>
+                
 
-                <h3>Creare la nostra prima app Angular </h3>
+              <h3>Creare la nostra prima app Angular </h3>
               <p>Utilizzeremo Angular CLI per creare una serie di componenti, servizi, rotte e direttive.</p>
 
-              <p>Per creare un nuovo progetto con Angular-cli basta aprire il terminale e far partire questo
-                comando:</p>
-                <pre class="prettyprint linenums"> ng new todo</pre>
-                <ngx-prism
-                [language]="'javascript'"
-                [code]="miaVar">
-                </ngx-prism>
+              <p>Per creare un nuovo progetto con Angular-cli basta aprire il terminale e far partire questo comando:</p>
+              <ngx-gist [gistId]="'lady-ody93/235be26479d0e5d175fbf0a4eddb6fb2'"></ngx-gist>
+               
+              <p>Dopo che avrà scaricato tutto il malloppo potremmo aprire il nostro progetto con il nostro editor
+                preferito, il mio è VS CODE (più avanti farò un tutorial a riguardo).</p>
+
+              <p>Se si è nuovi con Angular la struttura del progetto può sembrare caotica ma per iniziare noi ci
+                concentreremo nella cartella src e in particolare la cartella app (qui è dove andremo a creare la nostra
+                app).</p>
+              <img src="../assets/images/blog/Schermata 2019-12-17 alle 21.52.28.png" alt="">
+
+
+              <p>Per controllare lo stato della tua app utilizziamo: </p>
+              <ngx-gist [gistId]="'lady-ody93/8d08751a99f88aa28e3dbbd2b8206d06'"></ngx-gist>
+
+              <p>Per farsi una cultura riguardo cosa puoi fare con ng si utilizza: </p>
+              <pre class="prettyprint linenums">ng –help </pre>
+
+              <p>Quando il terminale carica tutto la nostra app sarà disponibile alla porta: http://localhost:4200/ </p>
+
+              <p>Per cominciare ci rendiamo la vita semplice e ci facciamo aiutare da bootstrap, ora in base a cosa devi
+                fare puoi scegliere come aggiungerlo al tuo progetto puoi aggiungerlo con un link (per un progetto così
+                piccolo è la scelta più veloce) oppure puoi installare bootstrap nel tuo node_modules (questo metodo di
+                solito è consigliato quando si fanno progetti di una certa dimensione, perciò non lo userò in questo
+                progetto ma faro una spiegazione dettagliata nel mio prossimo progetto). </p>
+
+              <p>Quindi aggiungiamo bootstrap cdn in index.html: </p>
+              <ngx-gist [gistId]="'lady-ody93/babb6703587f4988f59de1a1e7077756'"></ngx-gist>
+
+              <p>Partiamo subito dal app.component.html dove troveremo tutto ciò che vediamo alla porta 4200. Qui
+                cancelleremo tutto tranne che il titolo e aggiungeremo le classi bootstrap per crearci un semplice
+                form. </p>
+                <ngx-gist [gistId]="'lady-ody93/1901cc700363ffd23843bd2e6cb9c02d'"></ngx-gist>
+
+                <p>Se si vuole si può aggiungere un po' di css per renderlo più compatto.</p>
+                <ngx-gist [gistId]="'lady-ody93/d5ba7e628091dba2c92214ae3168c081'"></ngx-gist>
 
               
 
