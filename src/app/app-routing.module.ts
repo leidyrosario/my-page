@@ -10,6 +10,8 @@ import { BlogComponent } from './features/blog/blog.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
 import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
+import { PostTodoAppConAngularComponent } from './blogposts/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
+
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent, data: { depth: 1 } },
@@ -25,6 +27,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent, data: { depth: 5 } },
   { path: 'blogposts', component: BlogpostsComponent },
   { path: 'blogposts/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
+  { path: 'blogposts/todo-app-con-angular', component: PostTodoAppConAngularComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

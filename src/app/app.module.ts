@@ -1,5 +1,6 @@
+
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
@@ -22,6 +23,7 @@ import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { PrismModule } from '@ngx-prism/core';
 import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
+import { PostTodoAppConAngularComponent } from './blogposts/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominc
     CardComponent,
     MapComponent,
     BlogpostsComponent,
-    PostCominciamoConAngularComponent
+    PostCominciamoConAngularComponent,
+    PostTodoAppConAngularComponent
   ],
   imports: [
     BrowserModule,
@@ -47,10 +50,10 @@ import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominc
     ReactiveFormsModule,
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule,
-    PrismModule
+    AngularFirestoreModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule {}
