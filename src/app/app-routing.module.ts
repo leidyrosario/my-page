@@ -6,11 +6,10 @@ import { AboutComponent } from './features/about/about.component';
 import { ResumeComponent } from './features/resume/resume.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { PortfolioComponent } from './features/portfolio/portfolio.component';
-import { BlogComponent } from './features/blog/blog.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
-import { BlogpostsComponent } from './blogposts/blogposts.component';
-import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
-import { PostTodoAppConAngularComponent } from './blogposts/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
+import { BlogComponent } from './features/blog/blog.component';
+import { PostCominciamoConAngularComponent } from './features/blog/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
+import { PostTodoAppConAngularComponent } from './features/blog/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
 
 
 const routes: Routes = [
@@ -23,11 +22,10 @@ const routes: Routes = [
     component: PortfolioComponent,
     data: { state: 'portfolio' }
   },
-  { path: 'blog', component: BlogComponent, data: { depth: 4 } },
   { path: 'contact', component: ContactComponent, data: { depth: 5 } },
-  { path: 'blogposts', component: BlogpostsComponent },
-  { path: 'blogposts/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
-  { path: 'blogposts/todo-app-con-angular', component: PostTodoAppConAngularComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
+  { path: 'blog/todo-app-con-angular', component: PostTodoAppConAngularComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

@@ -1,44 +1,24 @@
+
 .cardContainer {
-    height: 350px;
-    display: inline-block;
-    width: 25%;
-    margin: 3.5%;
-    overflow: hidden;
-    background: white;
-    padding: 0 0 4em 0;
-    float: left; 
-    padding: 0 20px; 
-    margin-bottom: 40px;
-  }
-  .cardBody {
-    padding: 28px 40px;
-    background: #fff;
-    position: relative;
-    margin-bottom: 30px;
-  }
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: white;
+  float: left;
+}
 
-  .cardTitle {
-    text-transform: uppercase;
-    padding: 0;
-    margin: 0px;
-    font-weight: 400;
-    letter-spacing: 0;
-    font-size: 13px;
-    color: #345;
-    line-height: 1.4;
-  }
+.cardBody {
+  padding: 8px;
+}
 
-  .readMore {
-    width: 100%;
-    text-align: right;
-    color: #999;
-    text-transform: uppercase;
-    font-size: 12px;
-    transition-duration: .3s;
-    animation-duration: .3s;
-  }
-  .readMore:hover {
-    color: #333;
-    text-decoration: underline;
-    cursor: pointer;
-  }
+.cardTitle {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-size: 13px;
+  color: #345;
+  line-height: 1.4;
+}
+

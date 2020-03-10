@@ -1,9 +1,10 @@
-<div *ngIf='post' (click)="selectPost(post)" class='cardContainer'>
-  <div class='media-box'>
-    <img src="../../../assets/images/blog/{{ post.thumb }}" />
+<div *ngIf='post' class='cardContainer' [routerLink]="[post.path]">
+  <div class='media-box2'>
+    <img src="../../../assets/images/blog/{{ post.thumb }}" width="100" />
     <div class="mask"></div>
   </div>
   <div class='cardBody'>
     <div>{{ post.title }}</div>
   </div>
 </div>
+

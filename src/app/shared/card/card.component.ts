@@ -1,5 +1,5 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
-import { Blog } from '../../blogposts/models/blog.model';
+import { Post } from '../../features/blog/models/post.model';
 
 @Component({
   selector: 'app-card',
@@ -8,15 +8,6 @@ import { Blog } from '../../blogposts/models/blog.model';
 })
 export class CardComponent {
 
-  @Input() post: Blog;
-  @Output() selectedPost: EventEmitter<Blog> = new EventEmitter<Blog>();
-
-  constructor() {}
-
-  selectPost(post: Blog) {
-    this.selectedPost.emit(post);
-    console.log();
-  }
-
+  @Input() post: Post;
 
 }

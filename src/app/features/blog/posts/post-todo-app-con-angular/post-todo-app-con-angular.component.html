@@ -2,11 +2,9 @@
   <header id="masthead" role="banner">
     <a class="menu-toggle toggle-link"></a>
     <h1 class="site-title mobile-title">LEIDY ROSARIO</h1>
-    <!-- header-wrap -->
     <div class="header-wrap">
       <img src="../assets/images/site/leidy2.jpg" alt="avatar" />
       <h1 class="site-title">LEIDY ROSARIO</h1>
-      <!-- NAV MENU -->
       <nav
         id="primary-navigation"
         class="site-navigation primary-navigation"
@@ -14,14 +12,12 @@
       >
         <div class="nav-menu">
           <ul>
-            <!-- InstanceBeginEditable name="Menu-Content" -->
             <li>
-              <a href="/home"><i class="pe-7s-home"></i>Home</a>
+              <a [routerLink]="['/home']"><i class="pe-7s-home"></i>Home</a>
             </li>
             <li>
-              <a href="/blog"><i class="pe-7s-back"></i>Back To Blog</a>
+              <a [routerLink]="['/blog']"><i class="pe-7s-back"></i>Back To Blog</a>
             </li>
-            <!-- InstanceEndEditable -->
           </ul>
         </div>
       </nav>
@@ -43,14 +39,9 @@
             <a class="instagram" href="https://www.instagram.com/ledy_93/"></a>
           </li>
         </ul>
-        <!-- SOCIAL -->
-        <!-- copy-text -->
         <div class="copy-text"><p>&copy; 2019 Leidy Rosario</p></div>
-        <!-- copy-text -->
       </div>
-      <!-- header-bottom -->
     </div>
-    <!-- header-wrap -->
   </header>
   <div id="main" class="site-main">
     <div class="blog-single ">
@@ -169,7 +160,7 @@
                 il titolo e aggiungeremo le classi bootstrap per crearci un
                 semplice form.
               </p>
-              <ngx-gist
+              <ngx-gist style="height: 335px"
                 [gistId]="'lady-ody93/1901cc700363ffd23843bd2e6cb9c02d'"
               ></ngx-gist>
 
@@ -177,7 +168,7 @@
                 Se si vuole si può aggiungere un po' di css per renderlo più
                 compatto.
               </p>
-              <ngx-gist
+              <ngx-gist style="height: 265px"
                 [gistId]="'lady-ody93/d5ba7e628091dba2c92214ae3168c081'"
               ></ngx-gist>
 

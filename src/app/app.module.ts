@@ -15,16 +15,14 @@ import { HomeComponent } from './features/home/home.component';
 import { AboutComponent } from './features/about/about.component';
 import { ResumeComponent } from './features/resume/resume.component';
 import { PortfolioComponent } from './features/portfolio/portfolio.component';
-import { BlogComponent } from './features/blog/blog.component';
 import { ContactComponent } from './features/contact/contact.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
 import { CardComponent } from './shared/card/card.component';
 import { MapComponent } from './features/map/map.component';
-import { BlogpostsComponent } from './blogposts/blogposts.component';
+import { BlogComponent } from './features/blog/blog.component';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { PrismModule } from '@ngx-prism/core';
-import { PostCominciamoConAngularComponent } from './blogposts/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
-import { PostTodoAppConAngularComponent } from './blogposts/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
+import { PostCominciamoConAngularComponent } from './features/blog/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
+import { PostTodoAppConAngularComponent } from './features/blog/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +32,11 @@ import { PostTodoAppConAngularComponent } from './blogposts/posts/post-todo-app-
     AboutComponent,
     ResumeComponent,
     PortfolioComponent,
-    BlogComponent,
     ContactComponent,
     NotFoundComponent,
     CardComponent,
     MapComponent,
-    BlogpostsComponent,
+    BlogComponent,
     PostCominciamoConAngularComponent,
     PostTodoAppConAngularComponent
   ],
