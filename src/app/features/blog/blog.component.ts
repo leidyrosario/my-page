@@ -14,12 +14,12 @@ export class BlogComponent {
     {
       path: 'cominciamo-con-angular',
       title: 'Cominciamo con Angular',
-      thumb: 'angular_logo.png'
+      thumb: 'angular-logo-thumb.png'
     },
     {
       path: 'todo-app-con-angular',
       title: 'ToDo app con Angular',
-      thumb: 'OvMZBs9.jpg'
+      thumb: 'todo-thumb.png'
     }
     ];
 

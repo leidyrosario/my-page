@@ -1,10 +1,11 @@
 
 .cardContainer {
-  height: 200px;
-  display: inline-block;
-  overflow: hidden;
-  background: white;
-  float: left;
+    height: 350px;
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    overflow: hidden;
+    background: white;
 }
 
 .cardBody {

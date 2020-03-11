@@ -1,13 +1,7 @@
-<!-- PAGE -->
 <div id="page" class="hfeed site" [@routerTransition]="getDepth(o)">
   <app-sidebar></app-sidebar>
-
   <router-outlet #o="outlet"></router-outlet>
 </div>
-
-<!-- PORTFOLIO SINGLE AJAX CONTENT CONTAINER -->
 <div class="p-overlay"></div>
 <div class="p-overlay"></div>
-
-<!-- ALERT : used for contact form mail delivery alert -->
 <div class="site-alert animated"></div>

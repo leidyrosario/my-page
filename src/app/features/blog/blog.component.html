@@ -5,8 +5,9 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <app-card class="col-md-4"
+  <div class='card-deck container'>
+    <app-card
+              class="col-md-4"
               *ngFor="let post of posts"
               [post]="post"
     >
