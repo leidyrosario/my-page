@@ -15,16 +15,16 @@ import { PostIntroduzioneVscodeComponent } from './features/blog/posts/post-intr
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { depth: 1 } },
+  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'about', component: AboutComponent, data: { depth: 2 } },
-  { path: 'resume', component: ResumeComponent, data: { depth: 3 } },
+  { path: 'about', component: AboutComponent },
+  { path: 'resume', component: ResumeComponent },
   {
     path: 'portfolio',
     component: PortfolioComponent,
     data: { state: 'portfolio' }
   },
-  { path: 'contact', component: ContactComponent, data: { depth: 5 } },
+  { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
   { path: 'blog/todo-app-con-angular', component: PostTodoAppConAngularComponent },
