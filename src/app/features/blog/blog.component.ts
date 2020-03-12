@@ -20,6 +20,11 @@ export class BlogComponent {
       path: 'todo-app-con-angular',
       title: 'ToDo app con Angular',
       thumb: 'todo-thumb.png'
+    },
+    {
+      path: 'introduzione-vscode',
+      title: 'Introduzione a VSCode',
+      thumb: 'vscode-thumb.png'
     }
     ];
 

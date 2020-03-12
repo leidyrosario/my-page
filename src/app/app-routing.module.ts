@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -10,6 +11,7 @@ import { NotFoundComponent } from './features/not-found/not-found.component';
 import { BlogComponent } from './features/blog/blog.component';
 import { PostCominciamoConAngularComponent } from './features/blog/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
 import { PostTodoAppConAngularComponent } from './features/blog/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
+import { PostIntroduzioneVscodeComponent } from './features/blog/posts/post-introduzione-vscode/post-introduzione-vscode.component';
 
 
 const routes: Routes = [
@@ -26,6 +28,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'blog/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
   { path: 'blog/todo-app-con-angular', component: PostTodoAppConAngularComponent },
+  { path: 'blog/introduzione-vscode', component: PostIntroduzioneVscodeComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
