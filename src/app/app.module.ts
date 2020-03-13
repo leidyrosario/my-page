@@ -24,6 +24,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { PostCominciamoConAngularComponent } from './features/blog/posts/post-cominciamo-con-angular/post-cominciamo-con-angular.component';
 import { PostTodoAppConAngularComponent } from './features/blog/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
 import { PostIntroduzioneVscodeComponent } from './features/blog/posts/post-introduzione-vscode/post-introduzione-vscode.component';
+import { SocialComponent } from './shared/social/social/social.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { PostIntroduzioneVscodeComponent } from './features/blog/posts/post-intr
     BlogComponent,
     PostCominciamoConAngularComponent,
     PostTodoAppConAngularComponent,
-    PostIntroduzioneVscodeComponent
+    PostIntroduzioneVscodeComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
