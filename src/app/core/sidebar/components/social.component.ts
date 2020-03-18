@@ -1,4 +1,8 @@
-<ul class="social">
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-social',
+  template: `<ul class="social">
   <li>
     <a
       class="facebook"
@@ -21,3 +25,9 @@
 <div class="copy-text">
   <p>&copy; 2019 Leidy Rosario</p>
 </div>
+`
+})
+export class SocialComponent {
+
+
+}

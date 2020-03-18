@@ -15,7 +15,7 @@
   <div class="header-wrap" [ngClass]="{ 'header-wrap-opened': menuIsOpen }">
     <img src="./assets/images/site/leidy2.jpg" alt="avatar" />
 
-    <h1 class="site-title">LEIDY ROSARIO</h1>
+    <h1 class="site-title">LEIDY ROSARIO </h1>
 
     <nav
       id="primary-navigation"
@@ -48,16 +48,26 @@
               <i class="pe-7s-notebook"></i>Blog</a
             >
           </li>
-          <li>
+          <li *ngIf="true">
             <a [routerLink]="['/contact']" routerLinkActive="active">
               <i class="pe-7s-call"></i>Contact</a
+            >
+          </li>
+          <li *ngIf="false">
+            <a (click)="goto('cominciamo-con-angular')" routerLinkActive="active">
+              <i class="pe-7s-call"></i>Articolo</a
+            >
+          </li>
+          <li *ngIf="false">
+            <a [routerLink]="['/blog']" routerLinkActive="active">
+              <i class="pe-7s-back"></i>Back</a
             >
           </li>
         </ul>
       </div>
     </nav>
 
-    <!-- 
+    <!--
     <div class="header-search">
       <form role="search" method="get" id="search-form" action="#">
         <input
