@@ -1,5 +1,6 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
 import { Post } from '../../features/blog/models/post.model';
+import { title } from 'process';
 
 @Component({
   selector: 'app-card',
@@ -9,5 +10,7 @@ import { Post } from '../../features/blog/models/post.model';
 export class CardComponent {
 
   @Input() post: Post;
+
+
 
 }

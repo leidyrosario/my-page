@@ -25,6 +25,7 @@ import { PostCominciamoConAngularComponent } from './features/blog/posts/post-co
 import { PostTodoAppConAngularComponent } from './features/blog/posts/post-todo-app-con-angular/post-todo-app-con-angular.component';
 import { PostIntroduzioneVscodeComponent } from './features/blog/posts/post-introduzione-vscode/post-introduzione-vscode.component';
 import { SocialComponent } from './core/sidebar/components/social.component';
+import { PostTemplateDrivenFormComponent } from './features/blog/posts/post-template-driven-form/post-template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SocialComponent } from './core/sidebar/components/social.component';
     PostCominciamoConAngularComponent,
     PostTodoAppConAngularComponent,
     PostIntroduzioneVscodeComponent,
-    SocialComponent
+    SocialComponent,
+    PostTemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
