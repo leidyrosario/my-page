@@ -16,6 +16,10 @@ X Ripristinare la tua versione "spaccata" prendendo quella presente su GIT funzi
 git reset --hard
 git pull
 
+PER UPPARE LA DIST SU GITHUB
+sh commitDist.sh
+
+
 
 FTP:
 ftp.leidyrosario.it
