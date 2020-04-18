@@ -1,69 +1,72 @@
 .labelSkill {
-    float: left;
-    margin-right: 20px;
+  float: left;
+  margin-right: 20px;
 }
 
-.bar{
-    height: 25px;
-    margin: 0 auto 10px;
-    border-radius: 15px;
-    line-height: 25px;
-    font-size: 14px;
-    color:#fff;
-    position: relative;
+.bar {
+  height: 25px;
+  margin: 0 auto 10px;
+  border-radius: 15px;
+  line-height: 21px;
+  font-size: 13px;
+  color: #fff;
+  position: relative;
+  padding-left: 15px;
 }
 
-.bar:before{
-    content: '';
+.bar:before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 20px;
+  top: 0;
+  z-index: -2;
+  background: #d2d6d7;
+  border-radius: 15px;
+}
+
+.bar:after {
+  content: '';
+  background: #8acb82;;
+  height: 20px;
+  transition: 0.8s;
+  display: block;
+  width: calc(100% - 10px);
+  animation: animate 1 4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.bar1:after {
+  max-width: 85%;
+}
+
+.bar2:after {
+  max-width: 80%;
+}
+
+.bar3:after {
+  max-width: 75%;
+}
+
+.bar4:after {
+  max-width: 70%;
+}
+
+
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+  100% {
     width: 100%;
-    position: absolute;
-    left: 0;
-    height: 20px;
-    top: 0;
-    z-index: -2;
-    background: #d2d6d7;
-    border-radius: 15px;
+  }
 }
 
-.bar:after{
-    content: '';
-    background:  #8acb82;;
-    height: 20px;
-    transition: 0.8s;
-    display: block;
-    width: 100%;
-    animation: animate 1 4s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 15px;
+.clear {
+  clear: both;
 }
-
-.bar1:after{
-    max-width: 85%;
-}
-
-.bar2:after{
-    max-width: 80%;
-}
-
-.bar3:after{
-    max-width: 75%;
-}
-
-.bar4:after{
-    max-width: 70%;
-}
-
-
-@keyframes animate{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 100%;
-    }
-}
-
-.clear {clear: both;}
