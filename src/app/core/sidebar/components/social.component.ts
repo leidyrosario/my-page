@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     <a class="twitter" href="https://twitter.com/leidyRosario93"></a>
   </li>
   <li>
-    <a class="instagram" href="https://www.instagram.com/ledy_93/"></a>
+    <a class="github" href="https://github.com/leidyrosario"></a>
   </li>
   <li>
     <a

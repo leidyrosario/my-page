@@ -5,7 +5,11 @@ import { tap } from 'rxjs/operators';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
+  // tslint:disable-next-line:use-host-property-decorator
+  host: {
+    '(window:click)': 'onClick()'
+  }
 })
 export class SidebarComponent implements OnInit {
 
@@ -16,8 +20,13 @@ export class SidebarComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router) {
   }
 
-  toggleMenu() {
+  toggleMenu($event) {
+    $event.stopPropagation();
     this.menuIsOpen = !this.menuIsOpen;
+  }
+
+  onClick() {
+    this.menuIsOpen = false;
   }
 
   goto(url: string) {

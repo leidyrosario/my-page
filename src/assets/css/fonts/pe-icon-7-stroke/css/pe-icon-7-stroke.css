@@ -22,6 +22,7 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	padding-top: inherit;
 }
 
 .pe-7s-album:before {
