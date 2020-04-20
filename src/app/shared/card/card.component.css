@@ -1,25 +1,19 @@
 
-.cardContainer {
-    height: 350px;
-    display: inline-block;
-    width: 30%;
-    margin: 1.5%;
-    overflow: hidden;
-    background: white;
+.mdl-grid {
+	max-width: 600px;
 }
-
-.cardBody {
-  padding: 8px;
+.mdl-card__media {
+	margin: 0;
 }
-
-.cardTitle {
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: 0;
-  font-size: 13px;
-  color: #345;
-  line-height: 1.4;
+.mdl-card__media > img {
+	max-width: 100%;
 }
-
+.mdl-card__actions {
+	display: flex;
+	box-sizing:border-box;
+	align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+	margin-right: 3px;
+	margin-left: 3px;
+}
