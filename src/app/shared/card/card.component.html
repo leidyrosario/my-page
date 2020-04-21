@@ -1,37 +1,17 @@
-<div class="mdl-layout mdl-js-layout mdl-color--grey-100">
-  <main class="mdl-layout__content">
-    <div class="mdl-grid">
-      <div
-        class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp"
-      >
-        <div *ngIf="post" class="card" [routerLink]="[post.path]">
-          <figure class="mdl-card__media">
-            <img
-              class="card-img-top"
-              src="../../../assets/images/blog/{{ post.thumb }}"
-            />
-          </figure>
-          <div class="mdl-card__title">
-            <h1 class="mdl-card__title-text">{{ post.title }}</h1>
-          </div>
-          <div class="mdl-card__supporting-text">
-            {{ post.text }}
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-            <a
-              class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-              >Read More</a
-            >
-            <div class="mdl-layout-spacer"></div>
-            <button class="mdl-button mdl-button--icon mdl-button--colored">
-              <i class="material-icons">favorite</i>
-            </button>
-            <button class="mdl-button mdl-button--icon mdl-button--colored">
-              <i class="material-icons">share</i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-</div>
+<mat-card class="card" *ngIf="post" [routerLink]="[post.path]">
+  <img mat-card-lg-image class="image" 
+  src="../../../assets/images/blog/{{ post.thumb }}">
+  <mat-card-header>
+    <mat-card-title class="title">{{ post.title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{ post.text }}
+    </p>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-actions align="end">
+   <mat-icon>favorite</mat-icon>
+   <mat-icon>share</mat-icon>
+  </mat-card-actions>
+</mat-card>

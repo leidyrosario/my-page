@@ -7,6 +7,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { environment } from '../environments/environment';
 import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
+import { MatCardModule, MatDividerModule } from '@angular/material';
+import { MatIconModule } from '@angular/material';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -55,7 +58,10 @@ import { PostTemplateDrivenFormComponent } from './features/blog/posts/post-temp
     AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    NgxGistModule
+    NgxGistModule,
+    MatCardModule,
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
