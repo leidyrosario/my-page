@@ -29,6 +29,7 @@ import { PostTodoAppConAngularComponent } from './features/blog/posts/post-todo-
 import { PostIntroduzioneVscodeComponent } from './features/blog/posts/post-introduzione-vscode/post-introduzione-vscode.component';
 import { SocialComponent } from './core/sidebar/components/social.component';
 import { PostTemplateDrivenFormComponent } from './features/blog/posts/post-template-driven-form/post-template-driven-form.component';
+import { MaterialElevationDirective } from './shared/card/material-elevation.directive';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PostTemplateDrivenFormComponent } from './features/blog/posts/post-temp
     PostTodoAppConAngularComponent,
     PostIntroduzioneVscodeComponent,
     SocialComponent,
-    PostTemplateDrivenFormComponent
+    PostTemplateDrivenFormComponent,
+    MaterialElevationDirective
   ],
   imports: [
     BrowserModule,

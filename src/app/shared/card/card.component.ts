@@ -11,6 +11,8 @@ export class CardComponent {
 
   @Input() post: Post;
 
+  defaultElevation = 2;
+  raisedElevation = 8;
 
 
 }

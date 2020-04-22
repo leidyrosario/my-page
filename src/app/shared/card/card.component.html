@@ -1,5 +1,11 @@
 <div class="card-group">
-<mat-card class="card1" *ngIf="post" [routerLink]="[post.path]">
+<mat-card 
+appMaterialElevation 
+[defaultElevation]="defaultElevation" 
+raisedElevation="16"
+class="card1" 
+*ngIf="post" 
+[routerLink]="[post.path]">
   <img mat-card-image class="image" src="../../../assets/images/blog/{{ post.thumb }}">
   <mat-card-header>
     <mat-card-title class="title">{{ post.title }}</mat-card-title>
