@@ -14,19 +14,19 @@ export class BlogComponent {
     {
       path: 'cominciamo-con-angular',
       title: 'Cominciamo con Angular',
-      thumb: 'angular-logo-thumb.png',
+      thumb: 'angular-logo1.png',
       text: 'Breve introduzione al framework Angular'
     },
     {
       path: 'todo-app-con-angular',
       title: 'ToDo app con Angular',
-      thumb: 'todo-thumb.png',
+      thumb: 'OvMZBs9.jpg',
       text: 'Semplice CRUD spiegando ogni passo della realizzazione di un Angular App'
     },
     {
       path: 'introduzione-vscode',
       title: 'Introduzione a VSCode',
-      thumb: 'vscode-thumb.png',
+      thumb: 'vscode.png',
       text: 'Prima parte all\'introduzione del editor di codice più famoso del momento'
     },
     {

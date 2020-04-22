@@ -1,13 +1,11 @@
-<mat-card class="card" *ngIf="post" [routerLink]="[post.path]">
-  <img mat-card-lg-image class="image" 
-  src="../../../assets/images/blog/{{ post.thumb }}">
+<div class="card-group">
+<mat-card class="card1" *ngIf="post" [routerLink]="[post.path]">
+  <img mat-card-image class="image" src="../../../assets/images/blog/{{ post.thumb }}">
   <mat-card-header>
     <mat-card-title class="title">{{ post.title }}</mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <p>
-      {{ post.text }}
-    </p>
+    <p>{{ post.text }}</p>
   </mat-card-content>
   <mat-divider></mat-divider>
   <mat-card-actions align="end">
@@ -15,3 +13,4 @@
    <mat-icon>share</mat-icon>
   </mat-card-actions>
 </mat-card>
+</div>
