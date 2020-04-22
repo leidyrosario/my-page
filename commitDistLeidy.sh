@@ -5,4 +5,4 @@ cd /Users/lady_rosario/Documenti/leidyDist/
 git add .
 git commit -m "new version"
 git push -u origin master
-cd /Users/leidy_rosario/GitHub/lady
+cd /Users/lady_rosario/GitHub/lady
