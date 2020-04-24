@@ -1231,6 +1231,11 @@ h2 i:before {
   color: #345;
   background: #fff;
 }
+.process:hover {
+  color: #fff;
+  background: #345;
+  transition: transform .2s;
+}
 .process:after {
   content: "";
   position: absolute;
