@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { NgxGistModule } from 'ngx-gist/dist/ngx-gist.module';
 import { MatCardModule, MatDividerModule } from '@angular/material';
 import { MatIconModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -63,7 +64,8 @@ import { MaterialElevationDirective } from './shared/card/material-elevation.dir
     NgxGistModule,
     MatCardModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

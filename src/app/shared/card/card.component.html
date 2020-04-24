@@ -5,7 +5,9 @@ appMaterialElevation
 raisedElevation="16"
 class="card1" 
 *ngIf="post" 
-[routerLink]="[post.path]">
+[routerLink]="[post.path]"
+class="zoom"
+>
   <img mat-card-image class="image" src="../../../assets/images/blog/{{ post.thumb }}">
   <mat-card-header>
     <mat-card-title class="title">{{ post.title }}</mat-card-title>

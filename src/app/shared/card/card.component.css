@@ -1,8 +1,15 @@
-
-
 .card1{
   background-color: #ffff;
   border-radius : 15px;
+}
+
+.bm--card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.bm--card-equal-height .card-footer {
+  margin-top: auto;
 }
 
 .title {
@@ -22,5 +29,13 @@
 .mat-divider{
   border-top-width: 2px;
   border-top-style: ridge;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
