@@ -14,25 +14,25 @@ export class BlogComponent {
     {
       path: 'cominciamo-con-angular',
       title: 'Cominciamo con Angular',
-      thumb: 'angular-logo1.png',
-      text: 'Breve introduzione al framework Angular'
+      thumb: 'angular-logo-thumb.png',
+      text: 'Breve introduzione al framework Angular e a quello che lo rende così accattivante'
     },
     {
       path: 'todo-app-con-angular',
       title: 'ToDo app con Angular',
-      thumb: 'OvMZBs9.jpg',
+      thumb: 'todo-thumb.png',
       text: 'Semplice CRUD spiegando ogni passo della realizzazione di un Angular App'
     },
     {
       path: 'introduzione-vscode',
       title: 'Introduzione a VSCode',
-      thumb: 'vscode.png',
+      thumb: 'vscode-thumb.png',
       text: 'Prima parte all\'introduzione del editor di codice più famoso del momento'
     },
     {
       path: 'template-driven-form',
       title: 'Template Driven Form',
-      thumb: 'tutorial-cover.png',
+      thumb: 'tutorial-cover-thumb.png',
       text: ' Tutorial sui template-driven-form di Angular e su come collegarli a Firestore'
     }
     ];
