@@ -1,3 +1,4 @@
+import { PostTemplateDrivenFormComponent } from './features/blog/posts/post-template-driven-form/post-template-driven-form.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'blog/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
   { path: 'blog/todo-app-con-angular', component: PostTodoAppConAngularComponent },
   { path: 'blog/introduzione-vscode', component: PostIntroduzioneVscodeComponent },
+  { path: 'blog/template-driven-form', component: PostTemplateDrivenFormComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

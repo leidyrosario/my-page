@@ -7,4 +7,9 @@
     text-align: center;
  }
 
+ .msg {
+    text-align: center;
+    display: block;
+ }
+
  

@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AngularFireDatabase } from 'angularfire2/database';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-// tslint:disable-next-line:import-spacing
 import { Observable } from 'rxjs';
 import { NgForm } from '@angular/forms';
+import { AngularFirestore } from 'angularfire2/firestore';
 
 interface User {
   name: string;
   email: string;
   message: string;
+}
+
+export interface Message {
+  msg?: string;
+  name?: string;
+  email?: string;
+  message?: string;
+  date?: any;
 }
 
 @Component({
@@ -23,9 +28,17 @@ export class ContactComponent  {
   showMessage = false;
   user: User;
   users: User[] = [];
+  messages$: Observable<Message[]>;
+  messages: Message[];
+  sub: any;
 
 
-  constructor(private afDb: AngularFireDatabase) {
+  constructor(private afs: AngularFirestore) {
+    this.messages$ = this.afs.collection<Message>('messages').valueChanges();
+
+    this.sub = this.afs.collection<Message>('messages').valueChanges()
+    .subscribe(res => this.messages = res);
+
   }
 
   onSubmit(form: NgForm) {
@@ -33,7 +46,9 @@ export class ContactComponent  {
     const date = Date();
     this.showHideMessage();
     const formRequest = { name, email, message, date };
-    this.afDb.list('/messages').push(formRequest);
+
+    this.afs.collection<Message>('messages').add(formRequest);
+
   }
 
 
