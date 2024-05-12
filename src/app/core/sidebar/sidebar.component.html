@@ -15,7 +15,7 @@
   <div class="header-wrap" [ngClass]="{ 'header-wrap-opened': menuIsOpen }">
     <img src="./assets/images/site/leidy2.jpg" alt="avatar" />
 
-    <h1 class="site-title">LEIDY ROSARIO </h1>
+    <h1 class="site-title">LEIDY ROSARIO</h1>
 
     <nav
       id="primary-navigation"
@@ -36,13 +36,12 @@
           </li>
           <li>
             <a [routerLink]="['/resume']" routerLinkActive="active">
-              <i class="pe-7s-id"></i>Resume</a
-            >
+              <i class="pe-7s-id"></i>Resume</a>
           </li>
-          <!-- <li>
-                                        <a href="#/portfolio">
-                                            <i class="pe-7s-glasses"></i>Portfolio</a>
-                                    </li>-->
+          <!--<li>
+            <a [routerLink]="['/portfolio']" routerLinkActive="active"> 
+              <i class="pe-7s-glasses"></i>Portfolio</a>
+          </li>-->
           <li>
             <a [routerLink]="['/blog']" routerLinkActive="active">
               <i class="pe-7s-notebook"></i>Blog</a
@@ -54,7 +53,10 @@
             >
           </li>
           <li *ngIf="false">
-            <a (click)="goto('cominciamo-con-angular')" routerLinkActive="active">
+            <a
+              (click)="goto('cominciamo-con-angular')"
+              routerLinkActive="active"
+            >
               <i class="pe-7s-call"></i>Articolo</a
             >
           </li>

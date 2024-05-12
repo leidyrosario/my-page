@@ -127,7 +127,7 @@ label,
 .hentry .entry-header:before,
 .gallery-item a:after {
   display: inline-block;
-  font-family: "Pe-icon-7-stroke";
+  font-family: "fontello", "Pe-icon-7-stroke";
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1825,8 +1825,9 @@ h2 i:before {
 /* MEDIA CELL DESC */
 .media-cell-desc {
   position: relative;
-  padding: 28px 40px;
+  padding: 28px;
   background: #fff;
+  margin-top: -9px;
 }
 .media-cell-desc h3 {
   text-transform: uppercase;
@@ -1898,10 +1899,10 @@ h2 i:before {
   opacity: 0;
   filter: alpha(opacity = 0);
   position: absolute;
-  width: 120%;
-  height: 114%;
+  width: 100%;
+  height: 100%;
   top: 0;
-  left: -20px;
+  left: 0;
   bottom: 0;
   right: 0;
   text-align: center;
@@ -1921,6 +1922,30 @@ h2 i:before {
   width: 66px;
   line-height: 66px;
   font-size: 66px;
+  text-align: center;
+  content: "\e82a";
+  color: #fff;
+}
+.media-box .maskgit:before {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  margin: -33px 0 0 -33px;
+  width: 66px;
+  line-height: 66px;
+  font-size: 55px;
+  text-align: center;
+  content: "\e82a";
+  color: #fff;
+}
+media-box .masksite:before {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  margin: -33px 0 0 -33px;
+  width: 66px;
+  line-height: 66px;
+  font-size: 55px;
   text-align: center;
   content: "\e69d";
   color: #fff;

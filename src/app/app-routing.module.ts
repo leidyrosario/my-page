@@ -20,11 +20,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'resume', component: ResumeComponent },
-  {
-    path: 'portfolio',
-    component: PortfolioComponent,
-    data: { state: 'portfolio' }
-  },
+  { path: 'portfolio', component: PortfolioComponent},
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'blog/cominciamo-con-angular', component: PostCominciamoConAngularComponent },
